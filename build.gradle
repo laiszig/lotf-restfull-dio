@@ -14,12 +14,18 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //Trabalhar com java WEB
+    //Ja contem a lib do Jackson
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation group: 'javax.validation', name: 'validation-api', version: '2.0.1.Final'
-    implementation group: 'org.springframework.data', name: 'spring-data-jpa', version: '2.5.5'
-}
 
-test {
-    useJUnitPlatform()
+    //Hateoas
+    implementation 'org.springframework.hateoas:spring-hateoas'
+    implementation 'org.springframework.plugin:spring-plugin-core'
+
+    //Trabalhar com banco de dados
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    //H2
+    implementation 'com.h2database:h2:1.4.200'
+
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }

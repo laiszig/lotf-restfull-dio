@@ -2,13 +2,13 @@ package com.bootcamp.dio.restfull.dto;
 
 public class Soldado {
 
-    private String id;
+    private String num;
     private String nome;
     private String raca;
     private String arma;
 
-    public void setId(String id) {
-        this.id = id;
+    public void setId(String num) {
+        this.num = num;
     }
 
     public String getNome() {

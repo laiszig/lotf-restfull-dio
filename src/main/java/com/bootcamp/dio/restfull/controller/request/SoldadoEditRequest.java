@@ -1,6 +1,6 @@
 package com.bootcamp.dio.restfull.controller.request;
 
-public class SoldadoEdit {
+public class SoldadoEditRequest {
 
     private String nome;
     private String raca;
